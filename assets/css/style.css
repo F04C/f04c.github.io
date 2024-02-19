@@ -762,7 +762,7 @@ section .container {
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: rgb(108, 54, 54);
 }
 
 .services .icon-box:hover h4 a,

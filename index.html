@@ -29,6 +29,36 @@
 </head>
 
 <body>
+<!-- Audio -->
+<audio id="backgroundAudio" autoplay loop>
+  <source src="/audio/tranquility.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Script for Audio Checking -->
+<script>
+  const audioElement = document.getElementById('backgroundAudio');
+  
+  // Set the volume to a lower level 
+  audioElement.volume = 0.09;
+
+  function isAudioPlaying() {
+      return !audioElement.paused;
+  }
+
+  function playAudio() {
+      if (!isAudioPlaying()) {
+          audioElement.play();
+      }
+  }
+
+  // Check if audio is playing and play it if not
+  setInterval(() => {
+      playAudio();
+  }, 1000); // Check every second
+</script>
+
+
 
   <!-- ======= Header ======= -->
   <header id="header">
@@ -98,9 +128,51 @@
               </ul>
             </div>
           </div>
-          <p>
-            "Engaging in the selection of tasks, along with the experience of labor and the softening of difficulties, presents a genuine opportunity. Anyone can achieve all of this and more. There are no painful accusations, and the official time is not marked by discomfort. Everything belongs to it. The desire to express oneself is most certainly present in official duties. And both the reason and the one who rejects it are found in the same place. Something is sought with enthusiasm and passion. As for the one who avoids all blame, they experience the great pleasures of praise and contentment. "
-          </p>
+          <div">
+            <p style="text-align: center;">
+              "In tasks embarked, with challenges entwined,
+            </p>
+            <p style="text-align: center;">
+              A genuine chance for innovation I find.
+            </p>
+            <p style="text-align: center;">
+              Achieving beyond what meets the eye,
+            </p>
+            <p style="text-align: center;">
+              No painful accusations, as time slips by."
+            </p>
+
+            <br>
+
+            <p style="text-align: center;">
+              "Harmony with self-expression's pursuit,
+            </p>
+            <p style="text-align: center;">
+              In official duties, passion takes root.
+            </p>
+            <p style="text-align: center;">
+              Reason and rejection, a dance in the air,
+            </p>
+            <p style="text-align: center;">
+              Fueling a quest marked by fervent care."
+            </p>
+
+            <br>
+
+            <p style="text-align: center;">
+              "For those who avoid blame's darkened stain,
+            </p>
+            <p style="text-align: center;">
+              A journey adorned with praise's sweet refrain.
+            </p>
+            <p style="text-align: center;">
+              In the realm of contentment and delight,
+            </p>
+            <p style="text-align: center;">
+              This poetic endeavor bids you goodnight."
+            </p>
+          </div>
+          
         </div>
       </div>
 
